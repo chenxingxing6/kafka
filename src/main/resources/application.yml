@@ -1,6 +1,6 @@
 spring:
   kafka:
-    bootstrap-servers: 192.168.9.219:9092
+    bootstrap-servers: localhost:9092
     consumer:
       group-id: consumer
       enable-auto-commit: true

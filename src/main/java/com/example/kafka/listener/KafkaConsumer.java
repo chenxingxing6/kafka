@@ -10,7 +10,7 @@ public class KafkaConsumer {
      * 接收kafka消息 可接收多个topic消息
      * @param message
      */
-    @KafkaListener(topics = {"test1"})
+    @KafkaListener(topics = {"lxh-topic"})
     public void receiveMessage(String message){
         System.out.println("--------开始接收消息--------");
         System.out.println("        接收消息 ："+message);

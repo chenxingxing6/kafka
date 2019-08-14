@@ -26,7 +26,7 @@ public class MessageController {
      */
     @RequestMapping("/send")
     public String  sendMessage(){
-        kafkaTemplate.send("test1","test - msg");
+        kafkaTemplate.send("lxh-topic","send test - msg");
         return "success";
     }
 
