@@ -26,7 +26,9 @@ public class MessageController {
      */
     @RequestMapping("/send")
     public String  sendMessage(){
-        kafkaTemplate.send("lxh-topic","send test - msg");
+        for (int i = 0; i <10000 ; i++) {
+            kafkaTemplate.send("lxh-topic","send test - msg:" + i);
+        }
         return "success";
     }
 
